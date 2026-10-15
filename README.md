@@ -28,6 +28,9 @@ Durante el escaneo se identificaron servicios estándar (FTP, SSH) y un servidor
 Al realizar *Directory Fuzzing* sobre el servidor web en el puerto 3333, se descubrió un directorio oculto en la ruta `http://10.64.133.137:3333/internal/`. 
 Este directorio alojaba un formulario de subida de archivos (Upload Form) que presentaba deficiencias en la validación de los datos de entrada por parte del servidor.
 
+![Servidor web en el puerto 3333](puerto333.png)
+![formulario de subida de archivos](upload_form.png)
+
 ---
 
 ## 3. Explotación (Bypass de Filtros con Burp Suite)
